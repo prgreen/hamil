@@ -1,0 +1,11 @@
+doctype 5
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/game.css')
+  body
+    input(type='hidden',id='username', value='#{username}')
+    canvas(id='c', width='800', height='600', style='border:1px solid #000000;', tabindex='0') You browser does not support Canvas...
+    script(src='/javascripts/socket.io.min.js')
+    script(src='/javascripts/jquery-1.9.1.min.js')
+    script(src='/javascripts/fabric-0.9.15.min.js')
+    script(src='/javascripts/game.js')
